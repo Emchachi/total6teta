@@ -63,6 +63,18 @@
   }
 
   /**********************/
+  /*HERO SECTION*/
+  /**********************/
+
+  .description-container {
+    padding: 9.6rem 1.2rem;
+  }
+
+  .description {
+    font-size: 2.4rem;
+  }
+
+  /**********************/
   /*GALLERY*/
   /**********************/
 
@@ -81,12 +93,16 @@
 
   .grid {
     row-gap: 9.6rem;
-    column-gap: 2.6rem;
+    column-gap: 2rem;
   }
 
   .merch-img-box img {
     object-fit: cover;
     height: 100%;
+  }
+
+  .heading-secondary {
+    padding: 0;
   }
 
   /**********************/
@@ -98,6 +114,51 @@
   }
 
   .merch-text-box {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+  }
+
+  /**********************/
+  /*EVENT*/
+  /**********************/
+
+  .info-text {
+    font-size: 3.2rem;
+  }
+
+  .small-text {
+    display: inline-block;
+  }
+
+  /**********************/
+  /*FOOTER*/
+  /**********************/
+
+  footer {
+    padding: 6.4rem 0 6.4rem;
+  }
+
+  .footer-container {
+    padding: 0 1.2rem;
+  }
+
+  h3 {
+    font-size: 2.6rem;
+  }
+
+  .footer-small-text p {
+    font-size: 1.8rem;
+  }
+
+  .social-icons {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .social-link {
+    font-size: 6.2rem;
+  }
+
+  .left-side {
+    align-self: flex-start;
   }
 }
