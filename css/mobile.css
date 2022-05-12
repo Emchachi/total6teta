@@ -66,6 +66,10 @@
   /*TEXT*/
   /**********************/
 
+  .hero-description {
+    font-size: 4rem;
+  }
+
   .merch-text-box {
     font-size: 2.2rem;
   }

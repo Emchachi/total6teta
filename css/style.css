@@ -130,7 +130,7 @@
   align-items: center;
   justify-content: center;
 
-  /* position: relative; */
+  position: relative;
 }
 
 .hero-img {
