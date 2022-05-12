@@ -1,0 +1,55 @@
+/**********************/
+/*NAVIGATION*/
+/**********************/
+
+.logo {
+  height: 11.1rem;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.logo-container{
+  display: flex;
+  margin: 3rem auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-nav{
+  border-bottom: 3px solid #fff;
+}
+
+/**********************/
+/*MERCH SECTION*/
+/**********************/
+
+.merch-container{
+  width: 130rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border: 2px solid #fff;
+  padding: 4.8rem;
+  margin: 0 auto;
+}
+
+.image-carousel{
+  /* display: flex; */
+}
+
+/* 
+.image-carousel{
+  width: 100px;
+  height: 300px;
+} */
+
+.merch-img{
+  width: 100%;
+}
+
+/* .order-form{
+  display: flex;
+} */

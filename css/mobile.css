@@ -1,0 +1,72 @@
+@media (max-width: 75em) {
+  .main-nav {
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 62.5em) {
+  /**********************/
+  /*NAVIGATION*/
+  /**********************/
+
+  .btn-main-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .logo-container {
+    margin: 0;
+  }
+
+  .main-nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6.4rem;
+    transition: all 0.5s ease;
+
+    /* Hide navigation */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 6.4rem;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  /**********************/
+  /*TEXT*/
+  /**********************/
+
+  .merch-text-box {
+    font-size: 2.2rem;
+  }
+}
