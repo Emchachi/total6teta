@@ -56,22 +56,23 @@ let imgModal = (src) => {
   const closeBtn = document.createElement("i");
   closeBtn.setAttribute("class", "fas fa-times closeBtn");
 
-  closeBtn.onclick = () => {
+  closeBtn.addEventListener("click", () => {
     modal.remove();
-  };
+  });
 
   const nextBtn = document.createElement("i");
   nextBtn.setAttribute("class", "fas fa-angle-right nextBtn");
 
-  nextBtn.onclick = () => {
+  nextBtn.addEventListener("click", () => {
     newImage.setAttribute("src", nextImg());
-  };
+  });
   const prevBtn = document.createElement("i");
   prevBtn.setAttribute("class", "fas fa-angle-left prevBtn");
 
-  prevBtn.onclick = () => {
+  prevBtn.addEventListener("click", () => {
     newImage.setAttribute("src", prevImg());
-  };
+  });
+
   modal.append(newImage, closeBtn, nextBtn, prevBtn);
 };
 
