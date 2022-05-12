@@ -485,3 +485,63 @@ h3 {
 .icon:hover {
   transform: scale(1.3);
 }
+
+/**********************/
+/*IMAGES*/
+/**********************/
+
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.733);
+  margin-top: -1px;
+  animation: zoom 0.3s ease-in-out;
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.modal img {
+  width: 50%;
+  object-fit: cover;
+}
+
+.closeBtn {
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.closeBtn:hover {
+  color: rgb(255, 255, 255);
+}
+
+.nextBtn {
+  cursor: pointer;
+  position: absolute;
+  right: 10%;
+  color: #fff;
+  font-size: 5rem;
+}
+
+.prevBtn {
+  cursor: pointer;
+  position: absolute;
+  left: 10%;
+  color: #fff;
+  font-size: 5rem;
+}
