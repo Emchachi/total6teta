@@ -133,24 +133,26 @@
     padding: 6.4rem 0 6.4rem;
   }
 
+  .left-side {
+    align-items: center;
+    justify-content: center;
+  }
+
   .footer-container {
+    flex-direction: column;
     padding: 0 1.2rem;
+    gap: 1rem;
   }
 
   h3 {
-    font-size: 2.6rem;
+    font-size: 3rem;
   }
 
   .footer-small-text p {
-    font-size: 1.8rem;
-  }
-
-  .social-icons {
-    flex-direction: column;
-    gap: 0px;
+    font-size: 2rem;
   }
 
   .social-link {
-    font-size: 4rem;
+    font-size: 4.8rem;
   }
 }
