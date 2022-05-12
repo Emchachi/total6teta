@@ -74,6 +74,15 @@ let imgModal = (src) => {
     newImage.setAttribute("src", prevImg());
   });
 
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "ArrowLeft") newImage.setAttribute("src", prevImg());
+    e.key === "ArrowRight" && newImage.setAttribute("src", nextImg());
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") modal.remove();
+  });
+
   modal.append(newImage, closeBtn, nextBtn, prevBtn);
 };
 
@@ -89,7 +98,6 @@ const nextImg = () => {
 
 const prevImg = () => {
   imgIndex--;
-  console.log(imgIndex);
 
   if (imgIndex < 0) {
     imgIndex = images.length - 1;
@@ -97,3 +105,30 @@ const prevImg = () => {
 
   return images[imgIndex].src;
 };
+
+// DISABLE ARROW KEYS
+
+let keys = {};
+window.addEventListener(
+  "keydown",
+  function (e) {
+    keys[e.keyCode] = true;
+    switch (e.keyCode) {
+      case 37:
+      case 39:
+        // Arrow keys
+        e.preventDefault();
+        break; // Space
+      default:
+        break; // do not block other keys
+    }
+  },
+  false
+);
+window.addEventListener(
+  "keyup",
+  function (e) {
+    keys[e.keyCode] = false;
+  },
+  false
+);
