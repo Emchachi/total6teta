@@ -101,10 +101,6 @@
     height: 100%;
   }
 
-  .heading-secondary {
-    padding: 0;
-  }
-
   /**********************/
   /*TEXT*/
   /**********************/
@@ -151,11 +147,11 @@
 
   .social-icons {
     flex-direction: column;
-    gap: 0;
+    gap: 0px;
   }
 
   .social-link {
-    font-size: 6.2rem;
+    font-size: 4rem;
   }
 
   .left-side {
