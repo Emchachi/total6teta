@@ -66,6 +66,7 @@ let imgModal = (src) => {
   nextBtn.addEventListener("click", () => {
     newImage.setAttribute("src", nextImg());
   });
+
   const prevBtn = document.createElement("i");
   prevBtn.setAttribute("class", "fas fa-angle-left prevBtn");
 
@@ -76,7 +77,7 @@ let imgModal = (src) => {
   modal.append(newImage, closeBtn, nextBtn, prevBtn);
 };
 
-let nextImg = () => {
+const nextImg = () => {
   imgIndex++;
 
   if (imgIndex >= images.length) {
@@ -86,7 +87,7 @@ let nextImg = () => {
   return images[imgIndex].src;
 };
 
-let prevImg = () => {
+const prevImg = () => {
   imgIndex--;
   console.log(imgIndex);
 
