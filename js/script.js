@@ -15,9 +15,11 @@ const btnNav = document.querySelector(".btn-main-nav");
 const headerEl = document.querySelector(".header");
 const hideHero = document.querySelector(".hero");
 const hideDesc = document.querySelector(".description-container");
+const body = document.querySelector("body");
 
 btnNav.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
+  body.style.overflow = "hidden";
 
   if (headerEl.classList.contains("nav-open")) {
     hideHero.classList.add("hide");

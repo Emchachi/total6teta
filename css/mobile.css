@@ -101,6 +101,10 @@
     height: 100%;
   }
 
+  .modal img {
+    width: 50%;
+  }
+
   /**********************/
   /*TEXT*/
   /**********************/
@@ -134,7 +138,24 @@
   }
 
   .button {
-    display: visible;
+    opacity: 1;
+  }
+
+  .button a:link,
+  .button a:visited {
+    font-size: 2.2rem;
+  }
+
+  .order-button {
+    display: inline-block;
+    opacity: 1;
+    text-align: center;
+    /* padding: 1.2rem 0rem; */
+  }
+
+  .order-button a:link,
+  .order-button a:visited {
+    font-size: 2.8rem;
   }
 
   /**********************/
