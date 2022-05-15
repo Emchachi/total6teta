@@ -88,13 +88,14 @@
             <input type="text" name="Name" placeholder="First Name" ></input>
             <p class="price">20lv</p>
             
-            <select class="sizes">
+           <label> <select class="sizes" name="size[]" multiple>
 
-              <option value="S" name="size[]" multiple>S</option>
+              <option value="S" >S</option>
               <option value="M">M</option>
               <option value="L">L</option>
               <option value="XL">XL</option>
             </select>
+          </label>
             <input type="number" min="1" name="total">
             <p>TOTAL</p>
             <button class="btn" type="submit">Submit!</button>
