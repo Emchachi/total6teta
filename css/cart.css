@@ -2,6 +2,10 @@
 /*NAVIGATION*/
 /**********************/
 
+body {
+  background-color: #fff;
+}
+
 .logo {
   height: 11.1rem;
   border-radius: 50%;
@@ -12,14 +16,14 @@
   transform: scale(1.1);
 }
 
-.logo-container{
+.logo-container {
   display: flex;
   margin: 3rem auto;
   align-items: center;
   justify-content: center;
 }
 
-.main-nav{
+.main-nav {
   border-bottom: 3px solid #fff;
 }
 
@@ -27,29 +31,147 @@
 /*MERCH SECTION*/
 /**********************/
 
-.merch-container{
-  width: 130rem;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  border: 2px solid #fff;
-  padding: 4.8rem;
+.slider {
+  width: 120rem;
+  height: 60rem;
+  margin: 0 auto;
+  position: relative;
+
+  /* IN THE END */
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 60rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform 1s;
+}
+
+.testimonial {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-img {
+  width: 50%;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+
+  border: none;
+  background: rgba(255, 255, 255, 0.7);
+  font-family: inherit;
+  color: #333;
+  border-radius: 50%;
+  height: 5.5rem;
+  width: 5.5rem;
+  font-size: 3.25rem;
+  cursor: pointer;
+}
+
+.slider__btn--left {
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.slider__btn--right {
+  right: 30%;
+  transform: translate(50%, -50%);
+}
+
+.dots {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.dots__dot {
+  border: none;
+  background-color: blue;
+  opacity: 0.7;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  margin-right: 1.75rem;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
+}
+
+.dots__dot:last-child {
+  margin: 0;
+}
+
+.dots__dot--active {
+  /* background-color: #fff; */
+  background-color: red;
+  opacity: 1;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  cursor: pointer;
+  font-size: 2.2rem;
+  padding: 1.2rem;
+  border: 3px solid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+
+/**********************/
+/*FORM*/
+/**********************/
+
+.modal {
+  max-width: 120rem;
   margin: 0 auto;
 }
 
-.image-carousel{
-  /* display: flex; */
-}
-
-/* 
-.image-carousel{
-  width: 100px;
-  height: 300px;
-} */
-
-.merch-img{
-  width: 100%;
-}
-
-/* .order-form{
+.product-header {
   display: flex;
-} */
+  justify-content: space-around;
+
+  align-items: center;
+}
+
+.product-header label {
+  font-size: 1.8rem;
+}
+
+.modal__form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.modal__form p {
+  font-size: 1.8rem;
+  display: inline-block;
+}
+
+.btn {
+  background-color: black;
+}
+
+input[type="number"] {
+  width: 50px;
+}

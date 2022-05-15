@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/cart.css" />
-    <script defer src="js/script.js"></script>
+    <script defer src="js/cart_script.js"></script>
     <title>ТОТАЛШТЕТА</title>
   </head>
   <body>
@@ -27,24 +27,79 @@
     </header>
     <main>
       <section class="section-cart">
-        <div class="merch-container">
-          <div class="image-carousel">
-            <div class="image-slide">
-              <img class="merch-img" src="img/gallery/merch-close-1.JPG" alt="">
-            </div>
-            <div class="image-slide">
-              <img class="merch-img" src="img/gallery/merch-close-2.JPG" alt="">
-            </div>
-            <div class="image-slide">
-              <img class="merch-img" src="img/gallery/merch-close-3.JPG" alt="">
-            </div>
-            <div class="image-slide">
-              <img class="merch-img" src="img/gallery/merch-close-4.JPG" alt="">
+        <div class="slider">
+          <div class="slide">
+            <div class="testimonial">
+              <img
+                class="testimonial-img"
+                src="img/gallery/merch-close-1.JPG"
+              />
             </div>
           </div>
-          <div class="order-form">
+
+          <div class="slide">
+            <div class="testimonial">
+              <img
+                class="testimonial-img"
+                src="img/gallery/merch-close-2.JPG"
+              />
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="testimonial">
+              <img
+                class="testimonial-img"
+                src="img/gallery/merch-close-3.JPG"
+              />
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="testimonial">
+              <img
+                class="testimonial-img"
+                src="img/gallery/merch-close-4.JPG"
+              />
+            </div>
+          </div>
+
+          <button class="slider__btn slider__btn--left">&#8592;</button>
+          <button class="slider__btn slider__btn--right">&#8594;</button>
+          <div class="dots"></div>
+        </div>
+        <div class="btn-container">
+          <button class="btn btn--show-modal">Купи Тениска</button>
+        </div>
+        <div class="modal hid">
+          <button class="btn--close-modal">&times;</button>  
+          
+            <div class="product-header">
+              <label class="label-email">Email</label>
+              <label class="label-name">First Name</label>
+              <label class="label-price">Price</label>
+              <label class="label-size">Size</label>
+              <label class="label-quantity">Quantity</label>
+              <label class="label-total">Total</label>
+            </div>
+
+           <form class="modal__form netlify">
+            <input type="text" placeholder="Email" />
+            <input name="text" placeholder="First Name" ></input>
+            <p class="price">20lv</p>
             
-          </div>
+            <select class="sizes">
+
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+            <input type="number" min="1">
+            <p>TOTAL</p>
+            <button class="btn">Submit!</button>
+          </form>
+          
         </div>
       </section>
     </main>
