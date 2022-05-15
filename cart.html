@@ -84,18 +84,18 @@
             </div>
 
            <form name="merch" method="POST"  data-netlify="true" class="modal__form" >
-            <input type="text" placeholder="Email" />
-            <input name="text" placeholder="First Name" ></input>
+            <input type="text" name="email" placeholder="Email" />
+            <input type="text" name="Name" placeholder="First Name" ></input>
             <p class="price">20lv</p>
             
             <select class="sizes">
 
-              <option value="S">S</option>
+              <option value="S" name="size[]" multiple>S</option>
               <option value="M">M</option>
               <option value="L">L</option>
               <option value="XL">XL</option>
             </select>
-            <input type="number" min="1">
+            <input type="number" min="1" name="total">
             <p>TOTAL</p>
             <button class="btn" type="submit">Submit!</button>
           </form>
