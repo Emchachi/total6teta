@@ -81,3 +81,14 @@ const slider = function () {
   });
 };
 slider();
+
+function updateTotal() {
+  let priceEl = document.querySelector(".price");
+  let quantity = document.querySelector(".quantity").value;
+  price = parseInt(priceEl.innerText.replace("lv", ""));
+
+  let total = price * quantity;
+  document.querySelector(".total").innerHTML = total + "lv";
+}
+
+updateTotal();
