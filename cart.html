@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/cart.css" />
-    <script src="js/cart_script.js" async></script>
+    <script  src="js/cart_script.js" async></script>
     <title>ТОТАЛШТЕТА</title>
   </head>
   <body>
@@ -71,7 +71,7 @@
         <div class="btn-container">
           <button class="btn btn--show-modal">Купи Тениска</button>
         </div>
-        <div class="modal hid">
+        <div class="modal hide">
           <button class="btn--close-modal">&times;</button>  
           
 
@@ -108,7 +108,7 @@
           </div>
           <div class="labels">
             <label class="label-total" >TOTAL</label>
-          <label><input type="text" name="total" size="1" id="total" readonly></label>
+          <label><input type="text" name="total" size="1" id="total"  readonly></label>
             
           </div>
             <button class="btn" type="submit">Submit!</button>
@@ -117,6 +117,7 @@
           </form>
           
         </div>
+        <div class="overlay hide"></div>
       </section>
     </main>
   </body>

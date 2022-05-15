@@ -85,10 +85,35 @@ slider();
 function updateTotal() {
   let priceEl = document.querySelector(".price");
   let quantity = document.querySelector(".quantity").value;
-  price = parseInt(priceEl.innerText.replace("lv", ""));
+  price = parseInt(priceEl.innerHTML.replace("lv", ""));
 
   let total = price * quantity;
   document.getElementById("total").setAttribute("value", total + "lv");
 }
 
-updateTotal();
+document.querySelector(".quantity").addEventListener("keyup", updateTotal);
+
+// updateTotal();
+
+// MODAL
+
+const modal = document.querySelector(".modal");
+const btnCloseModal = document.querySelector(".btn--close-modal");
+const btnOpenModal = document.querySelector(".btn--show-modal");
+const overlay = document.querySelector(".overlay");
+
+const openModal = function (e) {
+  e.preventDefault();
+  modal.classList.remove("hide");
+  overlay.classList.remove("hide");
+  updateTotal();
+};
+
+const closeModal = function (e) {
+  e.preventDefault();
+  modal.classList.add("hide");
+  overlay.classList.add("hide");
+};
+
+btnOpenModal.addEventListener("click", openModal);
+btnCloseModal.addEventListener("click", closeModal);
