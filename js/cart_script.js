@@ -88,7 +88,7 @@ function updateTotal() {
   price = parseInt(priceEl.innerText.replace("lv", ""));
 
   let total = price * quantity;
-  document.querySelector(".total").innerHTML = total + "lv";
+  document.getElementById("total").setAttribute("value", total);
 }
 
 updateTotal();
