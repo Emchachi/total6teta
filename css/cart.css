@@ -3,7 +3,14 @@
 /**********************/
 
 body {
+  font-family: "Roboto Slab", serif;
+  /* font-family: ""; */
+  line-height: 1;
+  font-weight: 300;
   background-color: #fff;
+
+  overflow-x: hidden;
+  outline: none;
 }
 
 .logo {
@@ -32,7 +39,7 @@ body {
 /**********************/
 
 .slider {
-  width: 120rem;
+  max-width: 120rem;
   height: 60rem;
   margin: 0 auto;
   position: relative;
