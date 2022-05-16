@@ -16,7 +16,7 @@
     <script src="js/cart_script.js" async></script>
     <title>ТОТАЛШТЕТА</title>
   </head>
-  <body>
+  <body onload="document.merch.email.focus()"></body>>
     <header class="header">
       <nav class="main-nav">
         <div class="logo-container">
@@ -112,7 +112,7 @@
           <label><input type="text" name="total" size="1" id="total"  readonly></label>
             
           </div>
-            <button class="btn" type="submit">Submit!</button>
+            <button class="btn" type="submit" onclick="ValidateEmail(document.merch.email)">Submit!</button>
           
           </form>
           

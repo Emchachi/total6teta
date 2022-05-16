@@ -118,9 +118,23 @@ const closeModal = function (e) {
 btnOpenModal.addEventListener("click", openModal);
 btnCloseModal.addEventListener("click", closeModal);
 
+// VALIDATIONS
 function onlyNumberKey(evt) {
   // Only ASCII character in that range allowed
   var ASCIICode = evt.which ? evt.which : evt.keyCode;
   if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57)) return false;
   return true;
+}
+
+function ValidateEmail(inputText) {
+  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if (inputText.value.match(mailformat)) {
+    alert("Valid email address!");
+    document.merch.email.focus();
+    return true;
+  } else {
+    alert("You have entered an invalid email address!");
+    document.merch.email.focus();
+    return false;
+  }
 }

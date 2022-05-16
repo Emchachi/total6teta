@@ -191,4 +191,21 @@
   /**********************/
   /*FORM*/
   /**********************/
+
+  form {
+    grid-template-columns: 150px 150px;
+  }
+
+  .sizes {
+    text-align: center;
+  }
+
+  .labels input {
+    font-size: 1.2rem;
+  }
+
+  .labels label,
+  .labels p {
+    font-size: 1.8rem;
+  }
 }
