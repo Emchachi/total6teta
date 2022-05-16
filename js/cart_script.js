@@ -126,8 +126,10 @@ function onlyNumberKey(evt) {
   return true;
 }
 
-function ValidateEmail(inputText) {
-  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+const form = document.querySelector(".modal__form");
+
+function ValidateEmail(inputText, e) {
+  let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   if (inputText.value.match(mailformat)) {
     alert("Valid email address!");
     document.merch.email.focus();
@@ -135,6 +137,7 @@ function ValidateEmail(inputText) {
   } else {
     alert("You have entered an invalid email address!");
     document.merch.email.focus();
+    e.preventDefault();
     return false;
   }
 }

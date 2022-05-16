@@ -76,7 +76,7 @@
           <button class="btn--close-modal">&times;</button>  
           
 
-           <form name="merch" method="POST"  data-netlify="true" class="modal__form" >
+           <form name="merch" method="POST"  data-netlify="true" class="modal__form" onsubmit="event.preventDefault(); ValidateEmail(document.merch.email);" >
             
             <div class="labels">
               <label class="label-email">Email</label>
@@ -112,7 +112,7 @@
           <label><input type="text" name="total" size="1" id="total"  readonly></label>
             
           </div>
-            <button class="btn" type="submit" onclick="ValidateEmail(document.merch.email)">Submit!</button>
+            <input class="btn" type="submit" ></input>
           
           </form>
           
