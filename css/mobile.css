@@ -228,10 +228,12 @@
 
   .labels label,
   .labels p {
+    margin-bottom: 0.8rem;
     font-size: 1.8rem;
   }
 
   #total {
-    font-size: 1.6rem;
+    width: 10rem;
+    font-size: 1.8rem;
   }
 }
