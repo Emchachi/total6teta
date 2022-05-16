@@ -137,7 +137,6 @@ function ValidateEmail(inputText, e) {
   } else {
     alert("You have entered an invalid email address!");
     document.merch.email.focus();
-    e.preventDefault();
     return false;
   }
 }
