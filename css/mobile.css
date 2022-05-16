@@ -222,8 +222,13 @@
     text-align: center;
   }
 
+  .labels {
+    height: 6rem;
+  }
+
   .labels input {
     font-size: 1.2rem;
+    height: 3.2rem;
   }
 
   .labels label,
@@ -233,7 +238,6 @@
   }
 
   #total {
-    width: 10rem;
     font-size: 1.8rem;
   }
 }
