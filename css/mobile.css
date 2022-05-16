@@ -192,6 +192,12 @@
     width: 100%;
   }
 
+  .slider__btn {
+    width: 3.2rem;
+    height: 3.2rem;
+    font-size: 2.2rem;
+  }
+
   /**********************/
   /*FORM*/
   /**********************/
