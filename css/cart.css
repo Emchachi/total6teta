@@ -9,13 +9,13 @@ body {
   font-weight: 300;
   background-color: #fff;
 
-  overflow: hidden;
+  overflow-x: hidden;
   outline: none;
 }
 
 html {
   font-size: 62.5%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .logo {
