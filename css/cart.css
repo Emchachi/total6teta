@@ -13,6 +13,11 @@ body {
   outline: none;
 }
 
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
 .logo {
   height: 11.1rem;
   border-radius: 50%;
@@ -238,19 +243,3 @@ input[type="number"] {
   font-size: 2.2rem;
   border: none;
 }
-/*********/
-/* .modal {
-  width: 60rem;
-  margin: 0 auto;
-  margin-bottom: 100px;
-}
-
-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-}
-
-form label {
-  display: block;
-} */
