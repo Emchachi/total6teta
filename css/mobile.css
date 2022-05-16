@@ -198,6 +198,18 @@
     font-size: 2.2rem;
   }
 
+  .slider {
+    height: 40rem;
+  }
+
+  .slide {
+    height: 40rem;
+  }
+
+  .dots {
+    bottom: 7%;
+  }
+
   /**********************/
   /*FORM*/
   /**********************/
