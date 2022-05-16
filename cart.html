@@ -12,7 +12,8 @@
     />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/cart.css" />
-    <script  src="js/cart_script.js" async></script>
+    <link rel="stylesheet" href="css/mobile.css" />
+    <script src="js/cart_script.js" async></script>
     <title>ТОТАЛШТЕТА</title>
   </head>
   <body>
@@ -77,10 +78,9 @@
 
            <form name="merch" method="POST"  data-netlify="true" class="modal__form" >
             
-            <div class="label-container">
             <div class="labels">
               <label class="label-email">Email</label>
-            <input type="text" name="email" placeholder="Email" /></div>
+            <input type="text" name="email" placeholder="Email"/></div>
             <div class="labels">
               <label class="label-email">Name</label>
             <input type="text" name="Name" placeholder="First Name" ></input></div>
@@ -104,7 +104,8 @@
         
         <div class="labels">
         <label class="label-quantity">Quantity</label>
-            <input type="number" value="1" min="1" name="Quantity" class="quantity" onchange="updateTotal()" >
+            <input type="number" value="1" min="1" name="Quantity" class="quantity" onchange="updateTotal()"onkeypress="onlyNumberKey(event)" >
+            
           </div>
           <div class="labels">
             <label class="label-total" >TOTAL</label>
@@ -113,10 +114,10 @@
           </div>
             <button class="btn" type="submit">Submit!</button>
           
-          </div>
           </form>
           
         </div>
+
         <div class="overlay hide"></div>
       </section>
     </main>
