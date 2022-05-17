@@ -30,6 +30,15 @@ btnNav.addEventListener("click", function () {
   }
 });
 
+const navLinks = document.querySelectorAll(".nav-item");
+navLinks.forEach((i) => {
+  i.addEventListener("click", () => {
+    headerEl.classList.toggle("nav-open");
+    hideHero.classList.remove("hide");
+    hideDesc.classList.remove("hide");
+  });
+});
+
 // IMAGE CAROUSEL
 
 const images = document.querySelectorAll(".gallery-img");
@@ -134,4 +143,3 @@ window.addEventListener(
   },
   false
 );
-
